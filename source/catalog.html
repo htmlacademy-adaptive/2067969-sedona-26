@@ -8,12 +8,12 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo">
+    <a class="main-header__logo" href="index.html">
       <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96"
         alt="Логотип сайта городка Седона.">
     </a>
     <nav class="navigation">
-      <button class="navigation__toogle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
+      <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
       <div class="navigation__popover popover">
         <button class="popover__close" type="button"><span class="visually-hidden">Закрыть меню.</span></button>
         <ul class="navigation__list">
@@ -43,57 +43,57 @@
     <section class="catalog">
       <div class="catalog__wrapper">
         <header class="catalog__header">
-          <h2 class="catalog-header__title">Фото и видео</h2>
-          <p class="catalog-header__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам
+          <h2 class="catalog__title">Фото и видео</h2>
+          <p class="catalog__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам
             забыть о политике и экономике</p>
         </header>
-        <ul class="catalog__list catalog-foto">
+        <ul class="catalog__list catalog-photo">
           <li class="catalog__item">
-            <img class="catalog-item__image" src="img/photo-1-mobile.jpg" width="280" height="280"
+            <img class="catalog__image" src="img/photo-1-mobile.jpg" width="280" height="280"
               alt="Пустое шоссе в пустыне, закат.">
-            <h3 class="catalog-item__title">неродные просторы</h3>
-            <cite class="catalog-item__author">Автор фото: Борис</cite>
-            <button class="catalog-item__likes likes__icon" type="button">
+            <h3 class="catalog__item-title">неродные просторы</h3>
+            <cite class="catalog__author">Автор фото: Борис</cite>
+            <button class="catalog__likes likes" type="button">
               <span class="likes__number">1350</span>
             </button>
           </li>
           <li class="catalog__item">
-            <img class="catalog-item__image" src="img/photo-2-mobile.jpg" width="280" height="280"
+            <img class="catalog__image" src="img/photo-2-mobile.jpg" width="280" height="280"
               alt="Цветущие кактусы на фоте скалы.">
-            <h3 class="catalog-item__title">Местная растительность</h3>
-            <cite class="catalog-item__author">Автор фото: Сергей</cite>
-            <button class="catalog-item__likes likes__icon" type="button">
+            <h3 class="catalog__item-title">Местная растительность</h3>
+            <cite class="catalog__author">Автор фото: Сергей</cite>
+            <button class="catalog__likes likes" type="button">
               <span class="likes__number">143</span>
             </button>
           </li>
           <li class="catalog__item">
-            <img class="catalog-item__image" src="img/photo-3-mobile.jpg" width="280" height="280"
+            <img class="catalog__image" src="img/photo-3-mobile.jpg" width="280" height="280"
               alt="Дорога-серпантин через лес и скалы.">
-            <h3 class="catalog-item__title">Дорога на север</h3>
-            <cite class="catalog-item__author">Автор фото: Петр</cite>
-            <button class="catalog-item__likes likes__icon" type="button">
+            <h3 class="catalog__item-title">Дорога на север</h3>
+            <cite class="catalog__author">Автор фото: Петр</cite>
+            <button class="catalog__likes likes" type="button">
               <span class="likes__number">96</span>
             </button>
           </li>
           <li class="catalog__item">
-            <img class="catalog-item__image" src="img/photo-4-mobile.jpg" width="280" height="280"
+            <img class="catalog__image" src="img/photo-4-mobile.jpg" width="280" height="280"
               alt="Скалы в виде моста над пропастью.">
-            <h3 class="catalog-item__title">Мост дьявола</h3>
-            <cite class="catalog-item__author">Автор фото: Антон</cite>
-            <button class="catalog-item__likes likes__icon" type="button">
+            <h3 class="catalog__item-title">Мост дьявола</h3>
+            <cite class="catalog__author">Автор фото: Антон</cite>
+            <button class="catalog__likes likes" type="button">
               <span class="likes__number">254</span>
             </button>
           </li>
         </ul>
-        <div class="catalog-video catalog-video__wrapper">
-          <h2 class="catalog-video__title">Все еще сомневаетесь?</h2>
-          <p class="catalog-video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
-            очередной раз!</p>
-          <video class="catalog-video__item" width="280" height="177" controls="controls"
-            poster="img/video_poster .jpg">
-            <source src="#">
-          </video>
-        </div>
+    </section>
+    <section class="catalog-video">
+      <div class="catalog-video__wrapper"></div>
+      <h2 class="catalog-video__title">Все еще сомневаетесь?</h2>
+      <p class="catalog-video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+        очередной раз!</p>
+      <video class="catalog-video__item" width="280" height="177" controls="controls" poster="img/poster.jpg">
+        <source src="#">
+      </video>
       </div>
     </section>
   </main>
