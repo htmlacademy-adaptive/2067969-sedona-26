@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="css/style.css" ref="stylesheet">
 </head>
 
 <body class="page__body">
@@ -103,17 +104,18 @@
           <fieldset class="form-review__group review">
             <legend class="review__title">Опишите свои эмоции:</legend>
             <label class="review__label">
-              <textarea class="review__field" name="review__field" placeholder="Опишите подробно все свои восторги"></textarea>
+              <textarea class="review__field" name="review__field"
+                placeholder="Опишите подробно все свои восторги"></textarea>
               <span class="visually-hidden">Отзыв.</span>
             </label>
           </fieldset>
+          <button class="form-review__button button" type="submit" value="Отправить">ОТПРАВИТЬ ОТЗЫВ</button>
+          <p class="button-review__legend">
+            <small>
+              * — обязательные поля
+            </small>
+          </p>
         </form>
-        <button class="button-review button" type="submit" value="Отправить">ОТПРАВИТЬ ОТЗЫВ</button>
-        <p class="button-review__legend">
-          <small>
-            * — обязательные поля
-          </small>
-        </p>
       </div>
     </section>
   </main>
@@ -165,5 +167,4 @@
     </div>
   </div>
 </body>
-
 </html>
