@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link href="css/style.css" ref="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
@@ -13,22 +13,21 @@
       <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96"
         alt="Логотип сайта городка Седона.">
     </a>
-    <nav class="navigation">
+    <nav class="navigation navigation--close">
       <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
       <div class="navigation__popover popover">
-        <button class="popover__close" type="button"><span class="visually-hidden">Закрыть меню.</span></button>
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="index.html">Главная</a>
+            <a class="navigation__link" href="index.html">Главная</a>
           </li>
           <li class="navigation__item">
-            <a href="catalog.html">Фото и видео</a>
+            <a class="navigation__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="navigation__item">
-            <a>Форма отзыва</a>
+            <a class="navigation__link">Форма отзыва</a>
           </li>
           <li class="navigation__item">
-            <a href="#">HTML Academy</a>
+            <a class="navigation__link" href="#">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -37,9 +36,9 @@
 
   <main class="form-container">
     <h1 class="visually-hidden">Форма отзыва.</h1>
-    <section class="intro">
+    <section class="secodary-intro">
       <h2 class="visually-hidden">Приветствие.</h2>
-      <img class="intro__image" src="img/SEDONA.svg" width="229" height="39" alt="Sedona.">
+      <img class="secodary-intro__image" src="img/SEDONA.svg" width="229" height="39" alt="Sedona.">
     </section>
     <section class="form">
       <div class="form__wrapper">
@@ -53,13 +52,13 @@
           <fieldset class="form-review__group username">
             <legend class="username__title">Представьтесь:</legend>
             <label class="username__label">ИМЯ*:
-              <input class="username__field" type="text" name="name" placeholder="Пётр" required>
+              <input class="username__field" type="text" name="name" value="Пётр" required>
             </label>
             <label class="username__label">ФАМИЛИЯ*:
-              <input class="username__field" type="text" name="surname" placeholder="Пустота" required>
+              <input class="username__field" type="text" name="surname" value="Пустота" required>
             </label>
             <label class="username__label">Отчество:
-              <input class="username__field" type="text" name="patronymic" placeholder="Викторович">
+              <input class="username__field" type="text" name="patronymic" value="Викторович">
             </label>
           </fieldset>
           <fieldset class="form-review__group contacts">

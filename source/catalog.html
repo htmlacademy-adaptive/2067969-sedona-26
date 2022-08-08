@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link href="css/style.css" ref="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
@@ -13,22 +13,21 @@
       <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96"
         alt="Логотип сайта городка Седона.">
     </a>
-    <nav class="navigation">
+    <nav class="navigation navigation--close">
       <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
       <div class="navigation__popover popover">
-        <button class="popover__close" type="button"><span class="visually-hidden">Закрыть меню.</span></button>
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="index.html">Главная</a>
+            <a class="navigation__link" href="index.html">Главная</a>
           </li>
           <li class="navigation__item">
-            <a>Фото и видео</a>
+            <a class="navigation__link">Фото и видео</a>
           </li>
           <li class="navigation__item">
-            <a href="form.html">Форма отзыва</a>
+            <a class="navigation__link" href="form.html">Форма отзыва</a>
           </li>
           <li class="navigation__item">
-            <a href="#">HTML Academy</a>
+            <a class="navigation__link" href="#">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -37,9 +36,9 @@
 
   <main class="catalog-container">
     <h1 class="visually-hidden">Каталог фото и видео.</h1>
-    <section class="intro">
+    <section class="secodary-intro">
       <h2 class="visually-hidden">Приветствие.</h2>
-      <img class="intro__image" src="img/SEDONA.svg" width="229" height="39" alt="Sedona.">
+      <img class="secodary-intro__image" src="img/SEDONA.svg" width="229" height="39" alt="Sedona.">
     </section>
     <section class="catalog">
       <div class="catalog__wrapper">
@@ -55,7 +54,9 @@
                 alt="Пустое шоссе в пустыне, закат.">
               <h3 class="catalog__item-title">неродные просторы</h3>
             </a>
-            <cite class="catalog__author">Автор фото: Борис</cite>
+            <p class="catalog__author">
+              <cite class="catalog__author">Автор фото: Борис</cite>
+            </p>
             <button class="catalog__likes likes" type="button">
               <span class="likes__number">1350</span>
             </button>
@@ -66,7 +67,9 @@
                 alt="Цветущие кактусы на фоте скалы.">
               <h3 class="catalog__item-title">Местная растительность</h3>
             </a>
-            <cite class="catalog__author">Автор фото: Сергей</cite>
+            <p class="catalog__author">
+              <cite class="catalog__author">Автор фото: Сергей</cite>
+            </p>
             <button class="catalog__likes likes" type="button">
               <span class="likes__number">143</span>
             </button>
@@ -77,7 +80,9 @@
                 alt="Дорога-серпантин через лес и скалы.">
               <h3 class="catalog__item-title">Дорога на север</h3>
             </a>
-            <cite class="catalog__author">Автор фото: Петр</cite>
+            <p class="catalog__author">
+              <cite class="catalog__author">Автор фото: Петр</cite>
+            </p>
             <button class="catalog__likes likes" type="button">
               <span class="likes__number">96</span>
             </button>
@@ -88,7 +93,9 @@
                 alt="Скалы в виде моста над пропастью.">
               <h3 class="catalog__item-title">Мост дьявола</h3>
             </a>
-            <cite class="catalog__author">Автор фото: Антон</cite>
+            <p class="catalog__author">
+              <cite class="catalog__author">Автор фото: Антон</cite>
+            </p>
             <button class="catalog__likes likes" type="button">
               <span class="likes__number">254</span>
             </button>
@@ -99,8 +106,8 @@
     <section class="catalog-video">
       <div class="catalog-video__wrapper">
         <h2 class="catalog-video__title">Все еще сомневаетесь?</h2>
-        <p class="catalog-video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
-          очередной раз!</p>
+        <p class="catalog-video__text">Смотрите видеопрезентацию и скорее&nbsp;за билетами, пока они не подорожали&nbsp;в
+          &nbsp;очередной раз!</p>
         <video class="catalog-video__item" width="280" height="177" controls="controls" poster="img/poster.jpg">
           <source src="#">
         </video>

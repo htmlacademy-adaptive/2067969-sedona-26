@@ -1,0 +1,39 @@
+.navigation {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.navigation--close {
+  display: none;
+}
+
+.navigation__popover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  width: 320px;
+}
+
+.navigation__list {
+  display: grid;
+  row-gap: 1px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navigation__item {
+  padding-top: 17px;
+  padding-bottom: 12px;
+  background-color: @basic-blue;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  .title-font();
+  color: #ffffff;
+  text-align: center;
+}
+
+.navigation__link {
+  text-decoration: none;
+}
