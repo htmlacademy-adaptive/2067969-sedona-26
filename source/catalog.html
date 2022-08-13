@@ -3,135 +3,167 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
-  <header class="main-header">
-    <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96"
-        alt="Логотип сайта городка Седона.">
-    </a>
-    <nav class="navigation">
-      <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
-      <div class="navigation__popover popover">
-        <button class="popover__close" type="button"><span class="visually-hidden">Закрыть меню.</span></button>
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="navigation__item">
-            <a>Фото и видео</a>
-          </li>
-          <li class="navigation__item">
-            <a href="form.html">Форма отзыва</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#">HTML Academy</a>
-          </li>
-        </ul>
+  <div class="page__container">
+    <header class="main-header">
+      <div class="main-header__logo-wrapper">
+        <a class="main-header__logo">
+          <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96"
+            alt="Логотип сайта городка Седона.">
+        </a>
       </div>
-    </nav>
-  </header>
+      <nav class="navigation navigation--close">
+        <div class="navigation__toggle-wrapper">
+          <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
+        </div>
+        <div class="navigation__popover popover">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="index.html">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link">Фото и видео</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-  <main class="catalog-container">
-    <h1 class="visually-hidden">Каталог фото и видео.</h1>
-    <section class="intro">
-      <h2 class="visually-hidden">Приветствие.</h2>
-      <img class="intro__image" src="img/SEDONA.svg" width="229" height="39" alt="Sedona.">
-    </section>
-    <section class="catalog">
-      <div class="catalog__wrapper">
-        <header class="catalog__header">
-          <h2 class="catalog__title">Фото и видео</h2>
-          <p class="catalog__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам
-            забыть о политике и экономике</p>
-        </header>
-        <ul class="catalog__list catalog-photo">
-          <li class="catalog__item">
-            <a class="catalog__link" href="#">
-              <img class="catalog__image" src="img/photo-1-mobile.jpg" width="280" height="280"
-                alt="Пустое шоссе в пустыне, закат.">
-              <h3 class="catalog__item-title">неродные просторы</h3>
-            </a>
-            <cite class="catalog__author">Автор фото: Борис</cite>
-            <button class="catalog__likes likes" type="button">
-              <span class="likes__number">1350</span>
-            </button>
-          </li>
-          <li class="catalog__item">
-            <a class="catalog__link" href="#">
-              <img class="catalog__image" src="img/photo-2-mobile.jpg" width="280" height="280"
-                alt="Цветущие кактусы на фоте скалы.">
-              <h3 class="catalog__item-title">Местная растительность</h3>
-            </a>
-            <cite class="catalog__author">Автор фото: Сергей</cite>
-            <button class="catalog__likes likes" type="button">
-              <span class="likes__number">143</span>
-            </button>
-          </li>
-          <li class="catalog__item">
-            <a class="catalog__link" href="#">
-              <img class="catalog__image" src="img/photo-3-mobile.jpg" width="280" height="280"
-                alt="Дорога-серпантин через лес и скалы.">
-              <h3 class="catalog__item-title">Дорога на север</h3>
-            </a>
-            <cite class="catalog__author">Автор фото: Петр</cite>
-            <button class="catalog__likes likes" type="button">
-              <span class="likes__number">96</span>
-            </button>
-          </li>
-          <li class="catalog__item">
-            <a class="catalog__link" href="#">
-              <img class="catalog__image" src="img/photo-4-mobile.jpg" width="280" height="280"
-                alt="Скалы в виде моста над пропастью.">
-              <h3 class="catalog__item-title">Мост дьявола</h3>
-            </a>
-            <cite class="catalog__author">Автор фото: Антон</cite>
-            <button class="catalog__likes likes" type="button">
-              <span class="likes__number">254</span>
-            </button>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="catalog-video">
-      <div class="catalog-video__wrapper">
-        <h2 class="catalog-video__title">Все еще сомневаетесь?</h2>
-        <p class="catalog-video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
-          очередной раз!</p>
-        <video class="catalog-video__item" width="280" height="177" controls="controls" poster="img/poster.jpg">
-          <source src="#">
-        </video>
-      </div>
-    </section>
-  </main>
+    <main class="catalog-container">
+      <h1 class="visually-hidden">Каталог фото и видео.</h1>
+      <section class="secondary-intro">
+        <div class="secondary-intro__wrapper">
+          <h2 class="visually-hidden">Приветствие.</h2>
+          <img class="secondary-intro__image" src="img/SEDONA.svg" width="229" height="39" alt="Sedona.">
+        </div>
+      </section>
+      <section class="catalog">
+        <div class="catalog__wrapper">
+          <header class="catalog__header">
+            <div class="catalog__header-wrapper">
+              <h2 class="catalog__title">Фото и видео</h2>
+              <p class="catalog__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам
+                забыть о политике и экономике</p>
+            </div>
+          </header>
+          <ul class="catalog__list catalog-photo">
+            <li class="catalog__item">
+              <div class="catalog__item-wrapper">
+                <a class="catalog__link" href="#">
+                  <img class="catalog__image" src="img/photo-1-mobile.jpg" width="280" height="280"
+                    alt="Пустое шоссе в пустыне, закат.">
+                  <h3 class="catalog__item-title">неродные просторы</h3>
+                </a>
+                <p class="catalog__author">
+                  <cite class="catalog__author">Автор фото: Борис</cite>
+                </p>
+                <button class="catalog__likes likes" type="button">
+                  <span class="likes__number">1350</span>
+                </button>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <div class="catalog__item-wrapper">
+                <a class="catalog__link" href="#">
+                  <img class="catalog__image" src="img/photo-2-mobile.jpg" width="280" height="280"
+                    alt="Цветущие кактусы на фоте скалы.">
+                  <h3 class="catalog__item-title">Местная растительность</h3>
+                </a>
+                <p class="catalog__author">
+                  <cite class="catalog__author">Автор фото: Сергей</cite>
+                </p>
+                <button class="catalog__likes likes" type="button">
+                  <span class="likes__number">143</span>
+                </button>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <div class="catalog__item-wrapper">
+                <a class="catalog__link" href="#">
+                  <img class="catalog__image" src="img/photo-3-mobile.jpg" width="280" height="280"
+                    alt="Дорога-серпантин через лес и скалы.">
+                  <h3 class="catalog__item-title">Дорога на север</h3>
+                </a>
+                <p class="catalog__author">
+                  <cite class="catalog__author">Автор фото: Петр</cite>
+                </p>
+                <button class="catalog__likes likes" type="button">
+                  <span class="likes__number">96</span>
+                </button>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <div class="catalog__item-wrapper">
+                <a class="catalog__link" href="#">
+                  <img class="catalog__image" src="img/photo-4-mobile.jpg" width="280" height="280"
+                    alt="Скалы в виде моста над пропастью.">
+                  <h3 class="catalog__item-title">Мост дьявола</h3>
+                </a>
+                <p class="catalog__author">
+                  <cite class="catalog__author">Автор фото: Антон</cite>
+                </p>
+                <button class="catalog__likes likes" type="button">
+                  <span class="likes__number">254</span>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="catalog-video">
+        <div class="catalog-video__wrapper">
+          <h2 class="catalog-video__title">Все еще сомневаетесь?</h2>
+          <p class="catalog-video__text">Смотрите видеопрезентацию и скорее&nbsp;за билетами, пока они не подорожали&nbsp;в
+            &nbsp;очередной раз!</p>
+          <video class="catalog-video__item" width="280" height="177" controls="controls" poster="img/poster.jpg">
+            <source src="#">
+          </video>
+        </div>
+      </section>
+    </main>
 
-  <footer class="main-footer">
-    <div class="main-footer__wrapper">
-      <div class="main-footer__hashtag hashtag">
-        <b class="hashtag__text">#VISITSEDONA</b>
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <div class="main-footer__hashtag hashtag">
+          <div class="hashtag__wrapper">
+            <b class="hashtag__text">#VISITSEDONA</b>
+          </div>
+        </div>
+        <div class="main-footer__social social">
+          <h2 class="visually-hidden">Социальные сети.</h2>
+          <ul class="social__list">
+            <div class="social__wrapper">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Вконтакте.</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Телеграм.</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Youtube.</a>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <div class="main-footer__copyright copyright">
+          <div class="copyright__wrapper">
+            <b class="copyright__text">Разработано</b>
+            <a class="copyright__link copyright__link--htmlcademy" href="https://htmlacademy.ru/">HTML Academy.</a>
+          </div>
+        </div>
       </div>
-      <div class="main-footer__social social">
-        <h2 class="visually-hidden">Социальные сети.</h2>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Вконтакте.</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Телеграм.</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Youtube.</a>
-          </li>
-        </ul>
-      </div>
-      <div class="main-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link copyright__link--htmlcademy" href="https://htmlacademy.ru/">HTML Academy.</a>
-      </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
 </body>
-
 </html>
