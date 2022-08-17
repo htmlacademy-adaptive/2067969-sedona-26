@@ -1,10 +1,24 @@
 .impression {
   background-color: #ffffff;
+
+  @media (min-width: @tablet-width), (min-width: @desktop-width) {
+    grid-area: impression;
+  }
 }
 
 .impression__wrapper {
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+    margin: 0;
+  }
 }
 
 .impression__title {

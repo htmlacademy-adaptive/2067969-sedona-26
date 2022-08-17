@@ -10,8 +10,30 @@
   width: 229px;
   margin: 0 auto;
   padding: 52px 0 67px;
+
+  @media (min-width: @tablet-width) {
+    width: 457px;
+    height: 78px;
+    padding: 95px 0 117px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 459px;
+    height: 80px;
+    padding: 101px 0 120px;
+  }
 }
 
 .secondary-intro__image {
   display: block;
+
+  @media (min-width: @tablet-width) {
+    width: 457px;
+    height: 78px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 459px;
+    height: 80px;
+  }
 }

@@ -6,6 +6,18 @@
   width: 280px;
   padding: 17px 20px 0;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 445px;
+    padding: 0 0 66px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 445px;
+    padding: 0 0 64px;
+    margin: 0 auto;
+  }
 }
 
 .catalog-video__title {
@@ -20,4 +32,17 @@
   color: #333333;
   text-align: center;
   margin: 0 auto 38px;
+}
+
+.catalog-video__item-wrapper {
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    padding: 0 60px 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+    padding: 0 0 120px;
+    margin: 0 auto;
+  }
 }

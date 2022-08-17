@@ -1,6 +1,16 @@
 .main-header {
+  display: flex;
   background-color: #ffffff;
   padding: 0 18px 0;
+  height: 56px;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
 }
 
 .main-header__logo-image {
@@ -11,4 +21,16 @@
   width: 185px;
   margin: 0 auto -40px;
   z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 38%;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 42%;
+  }
 }
