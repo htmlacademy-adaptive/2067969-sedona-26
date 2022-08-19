@@ -6,16 +6,20 @@
   width: 100%;
   padding: 28px 0 29px;
   margin: 0 auto;
-}
 
-.main-footer__hashtag {
-  margin-bottom: 33px;
-}
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0;
+    padding: 28px 0 29px;
+  }
 
-.main-footer__social {
-  margin-bottom: 47px;
-}
-
-.main-footer__copyright {
-  margin-bottom: 29px;
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0;
+    padding: 28px 0 29px;
+  }
 }

@@ -1,5 +1,9 @@
 .username {
   background-color: #ffffff;
+
+  @media (min-width: @tablet-width), (min-width: @desktop-width) {
+    grid-area: name;
+  }
 }
 
 .username__wrapper {
@@ -11,6 +15,7 @@
   .title-font();
   color: #000000;
   text-align: center;
+  padding: 0;
   margin-bottom: 20px;
 }
 
@@ -28,4 +33,5 @@
   background-color: #f2f2f2;
   border: none;
   box-sizing: border-box;
+  width: 100%;
 }
