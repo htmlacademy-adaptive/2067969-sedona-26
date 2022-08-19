@@ -71,17 +71,18 @@
   @media (min-width: @tablet-width) {
     background-color: transparent;
     color: #000000;
+    box-shadow: none;
   }
 
   @media (min-width: @desktop-width) {
     background-color: transparent;
     color: #000000;
+    box-shadow: none;
   }
 }
 
-// нужно ли писать  screen? //
 .navigation__item:nth-child(3) {
-  @media screen and (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
     grid-column: 4 / 5;
   }
 
@@ -91,7 +92,7 @@
 }
 
 .navigation__item:nth-child(4) {
-  @media screen and (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
     grid-column: 5 / 6;
   }
 
