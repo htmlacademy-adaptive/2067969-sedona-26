@@ -4,16 +4,41 @@
 
 .no-photo-item__wrapper {
   width: 284px;
-  padding: 24px 18px 24px;
+  padding: 25px 18px 25px;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     width: 256px;
-    padding: 42px 0 63px;
+    padding: 42px 43px 42px;
+    box-sizing: border-box;
   }
 
   @media (min-width: @desktop-width) {
     width: 400px;
-    padding: 43px 0 62px;
+    padding: 43px 44px 62px;
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .no-photo-item--area::after {
+    content: "";
+    width: 284px;
+    height: 1px;
+    background-color: #d6d6d6;
+    position: absolute;
+    bottom: 336px;
+    left: 18px;
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .no-photo-item--road::after {
+    content: "";
+    width: 284px;
+    height: 1px;
+    background-color: #d6d6d6;
+    position: absolute;
+    bottom: 169px;
+    left: 18px;
   }
 }
