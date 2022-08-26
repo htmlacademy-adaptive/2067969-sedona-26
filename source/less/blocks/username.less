@@ -1,8 +1,23 @@
 .username {
   background-color: #ffffff;
+  position: relative;
 
   @media (min-width: @tablet-width), (min-width: @desktop-width) {
     grid-area: name;
+  }
+}
+
+.username::before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  background-color: #e5e5e5;
+  top: 0;
+  left: -20px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 

@@ -1,8 +1,55 @@
 .impression {
   background-color: #ffffff;
+  position: relative;
 
   @media (min-width: @tablet-width), (min-width: @desktop-width) {
     grid-area: impression;
+  }
+}
+
+.impression::before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  background-color: #e5e5e5;
+  top: 0;
+  left: -20px;
+
+  @media (min-width: @tablet-width) {
+    width: 123px;
+    top: 12px;
+    left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 280px;
+    top: 20px;
+    left: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .impression::after {
+    content: "";
+    position: absolute;
+    width: 123px;
+    height: 1px;
+    background-color: #e5e5e5;
+    top: 12px;
+    right: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .impression::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 1px;
+    background-color: #e5e5e5;
+    top: 20px;
+    right: 0;
   }
 }
 
@@ -22,9 +69,11 @@
 
   @media (min-width: @desktop-width) {
     width: 896;
-    margin: 0;
+    margin: 0 auto;
+    padding: 0 0 69px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -37,7 +86,9 @@
 
   @media (min-width: @tablet-width) {
     .special-font();
-    padding: 0 123px 12px;
+    // padding: 0 123px 12px;
+    padding: 0 65px 12px 63px;
+    background-color: #ffffff;
   }
 
   @media (min-width: @desktop-width) {
@@ -60,7 +111,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 28px 0 0;
+    margin: 0;
   }
 
   &:hover .impression__mark {

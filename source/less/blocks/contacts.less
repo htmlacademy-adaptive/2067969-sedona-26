@@ -1,8 +1,31 @@
 .contacts {
   background-color: #ffffff;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     grid-area: contacts;
+  }
+}
+
+.contacts::before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  background-color: #e5e5e5;
+  top: 0;
+  left: -20px;
+
+  @media (min-width: @tablet-width) {
+    width: 332px;
+    transform: rotate(90deg);
+    left: -50%;
+    top: 45%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 338px;
+    left: -33%;
   }
 }
 
@@ -73,9 +96,14 @@
   box-sizing: border-box;
   width: 80%;
 
-  @media (min-width: @tablet-width), (min-width: @desktop-width) {
-
+  @media (min-width: @tablet-width) {
+    width: 80%;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 86%;
+  }
+
 
   &::placeholder {
     color: rgba(0, 0, 0, 0.3);

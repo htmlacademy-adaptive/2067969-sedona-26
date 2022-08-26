@@ -1,8 +1,55 @@
 .review {
   background-color: #ffffff;
+  position: relative;
 
   @media (min-width: @tablet-width), (min-width: @desktop-width) {
     grid-area: review;
+  }
+}
+
+.review::before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  background-color: #e5e5e5;
+  top: 0;
+  left: -20px;
+
+  @media (min-width: @tablet-width) {
+    width: 123px;
+    top: 32px;
+    left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 280px;
+    top: 66px;
+    left: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .review::after {
+    content: "";
+    position: absolute;
+    width: 123px;
+    height: 1px;
+    background-color: #e5e5e5;
+    top: 32px;
+    right: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .review::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 1px;
+    background-color: #e5e5e5;
+    top: 66px;
+    right: 0;
   }
 }
 
@@ -19,6 +66,7 @@
   @media (min-width: @desktop-width) {
     width: 960px;
     margin: 0;
+    padding-top: 56px;
   }
 }
 
@@ -51,11 +99,13 @@
   @media (min-width: @tablet-width) {
     width: 100%;
     margin-bottom: 48px;
+    min-height: 160px;
   }
 
 
   @media (min-width: @desktop-width) {
     width: 80%;
-    margin: 0 auto;
+    margin: 0 96px 48px;
+    min-height: 160px;
   }
 }

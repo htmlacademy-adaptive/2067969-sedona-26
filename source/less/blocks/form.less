@@ -86,7 +86,7 @@
   @media (min-width: @desktop-width) {
     grid-area: button;
     width: 960px;
-    margin: 0;
+    margin: 0 auto;
   }
 }
 
@@ -99,6 +99,11 @@
   @media (min-width: @tablet-width) {
     width: 50%;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 40%;
+    margin: 0 96px 0;
+  }
 }
 
 .form-review__legend {
@@ -110,6 +115,10 @@
     position: absolute;
     right: 0;
     top: 23px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 96px;
   }
 }
 
