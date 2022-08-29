@@ -61,13 +61,16 @@
             <fieldset class="form-review__group username">
               <div class="username__wrapper">
                 <legend class="username__title">Представьтесь:</legend>
-                <label class="username__label" for="name">ИМЯ*:
+                <label class="username__label" for="name">
+                  <span class="username__text">ИМЯ*:</span>
                   <input class="username__field" type="text" name="name" id="name" value="Пётр" required>
                 </label>
-                <label class="username__label" for="surname">ФАМИЛИЯ*:
+                <label class="username__label" for="surname">
+                  <span class="username__text">ФАМИЛИЯ*:</span>
                   <input class="username__field" type="text" name="surname" id="surname" value="Пустота" required>
                 </label>
-                <label class="username__label" for="text">Отчество:
+                <label class="username__label" for="text">
+                  <span class="username__text">Отчество:</span>
                   <input class="username__field" type="text" name="patronymic" id="text" value="Викторович">
                 </label>
               </div>
@@ -75,12 +78,14 @@
             <fieldset class="form-review__group contacts">
               <div class="contacts__wrapper">
                 <legend class="contacts__title">Контактная информация:</legend>
-                <label class="contacts__label">Контактный телефон*:
+                <label class="contacts__label">
+                  <span class="contacts__text">Контактный телефон*:</span>
                   <input class="contacts__field" type="tel" name="phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{7}"
                     placeholder="Введите телефон" required>
                   <span class="contacts__icon--phone"></span>
                 </label>
-                <label class="contacts__label">Электронная почта*:
+                <label class="contacts__label">
+                  <span class="contacts__text">Электронная почта*:</span>
                   <input class="contacts__field" type="email" name="e-mail" placeholder="Введите e-mail" required>
                   <span class="contacts__icon--email"></span>
                 </label>
@@ -90,15 +95,15 @@
               <div class="impression__wrapper">
                 <legend class="impression__title">Ваше общее впечатление:</legend>
                 <label class="impression__label">Скорее положительное
-                  <input class="impression__control" type="radio" name="positive" value="positive" checked>
+                  <input class="impression__control" type="radio" name="impression" value="positive" checked>
                   <span class="impression__mark"></span>
                 </label>
                 <label class="impression__label">Скорее отрицательное
-                  <input class="impression__control" type="radio" name="negative" value="negative">
+                  <input class="impression__control" type="radio" name="impression" value="negative">
                   <span class="impression__mark"></span>
                 </label>
                 <label class="impression__label">Затрудняюсь ответить
-                  <input class="impression__control" type="radio" name="difficult-to-answer" value="difficult-to-answer">
+                  <input class="impression__control" type="radio" name="impression" value="difficult-to-answer">
                   <span class="impression__mark"></span>
                 </label>
               </div>

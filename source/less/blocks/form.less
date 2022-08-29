@@ -80,12 +80,15 @@
     grid-area: button;
     width: 648px;
     margin: 0;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
     grid-area: button;
-    width: 960px;
+    width: 768px;
+    display: flex;
+    justify-content: space-between;
     margin: 0 auto;
   }
 }
@@ -97,28 +100,29 @@
   margin-bottom: 3px;
 
   @media (min-width: @tablet-width) {
-    width: 50%;
+    width: 324px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 40%;
-    margin: 0 96px 0;
+    width: 384px;
+    margin: 0;
   }
 }
 
 .form-review__legend {
+  width: 137px;
   display: block;
   margin: 0 0 0 auto;
 
   @media (min-width: @tablet-width) {
     .basic-font();
-    position: absolute;
-    right: 0;
-    top: 23px;
+    padding: 23px 0 14px;
   }
 
+  // как изменить шрифт для small
   @media (min-width: @desktop-width) {
-    margin-right: 96px;
+    .basic-font();
+    padding: 23px 0 14px;
   }
 }
 

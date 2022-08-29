@@ -17,15 +17,17 @@
   left: -20px;
 
   @media (min-width: @tablet-width) {
-    width: 332px;
-    transform: rotate(90deg);
-    left: -50%;
-    top: 45%;
+    width: 1px;
+    height: 338px;
+    top: 0;
+    left: 0;
   }
 
   @media (min-width: @desktop-width) {
-    width: 338px;
-    left: -33%;
+    width: 1px;
+    height: 338px;
+    top: 0;
+    left: 14px;
   }
 }
 
@@ -72,7 +74,7 @@
   color: #333333;
   text-align: left;
   position: relative;
-  // padding: 0 0 0 16px; возможно отодвинуть label не доставая input из него?
+
 
   @media (min-width: @tablet-width) {
     width: 94%;
@@ -83,6 +85,10 @@
     width: 100%;
     padding: 0;
   }
+}
+
+.contacts__text {
+  padding-left: 16px;
 }
 
 .contacts__field {
