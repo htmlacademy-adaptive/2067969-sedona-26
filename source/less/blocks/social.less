@@ -15,14 +15,12 @@
   background-color: @basic-blue;
   display: block;
 
-  &:hover .social__item {
+  .social__link:hover {
     background-color: @middle-blue;
   }
 
-  &:active {
-    .social__item {
-      background-color: @dark-blue;
-    }
+  .social__link:active {
+    background-color: @dark-blue;
 
     .social__icon {
       opacity: 30%;
@@ -33,7 +31,7 @@
 .social__wrapper {
   width: 156px;
   margin: 0 auto;
-  padding: 0 80px 47px 84px;
+  padding: 0 80px 40px 84px;
 
   @media (min-width: @tablet-width) {
     padding: 0 50px;

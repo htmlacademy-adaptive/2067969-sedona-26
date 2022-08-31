@@ -115,31 +115,34 @@
 .advantages__town-item-wrapper {
   width: 240px;
   margin: 0 auto;
-  padding-left: 42px;
+  // padding: 0 18px;
+
 
   @media (min-width: @tablet-width) {
     width: 256px;
-    padding: 150px 45px 59px;
+    padding: 50px 31px 59px;
     box-sizing: border-box;
   }
 
   @media (min-width: @desktop-width) {
     width: 400px;
-    padding: 150px 58px 80px;
+    padding: 50px 58px 80px;
     box-sizing: border-box;
   }
 }
 
 .advantages__town-title {
   .title-font();
-  margin: 8px 0 16px;
   color: #000000;
   text-align: left;
+  margin: 0;
+  padding: 8px 0 16px 42px;
 
   @media (min-width: @tablet-width) {
     .special-font();
     text-align: center;
     margin-bottom: 24px;
+    padding: 108px 0 0 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -153,13 +156,16 @@
   margin: 0;
   color: #333333;
   text-align: left;
+  padding-left: 42px;
 
   @media (min-width: @tablet-width) {
     text-align: center;
+    padding: 0;
   }
 
   @media (min-width: @desktop-width) {
     text-align: center;
+    padding: 0;
   }
 }
 
@@ -167,16 +173,34 @@
   background-image: url("../img/housing-icon.svg");
   background-repeat: no-repeat;
   background-size: 40px 40px;
+  background-position: left;
+
+  @media (min-width: @tablet-width) {
+    background-position: center top;
+    background-size: 75px 72px;
+  }
 }
 
 .advantages__town-title--food {
   background-image: url("../img/food-icon.svg");
   background-repeat: no-repeat;
   background-size: 40px 40px;
+  background-position: left;
+
+  @media (min-width: @tablet-width) {
+    background-position: center top;
+    background-size: 77px 68px;
+  }
 }
 
 .advantages__town-title--souvenirs {
   background-image: url("../img/souvenir-icon.svg");
   background-repeat: no-repeat;
   background-size: 40px 40px;
+  background-position: left;
+
+  @media (min-width: @tablet-width) {
+    background-position: center top;
+    background-size: 64px 75px;
+  }
 }

@@ -17,6 +17,10 @@
 
 .catalog__header {
   margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .catalog__header-wrapper {
@@ -24,12 +28,7 @@
   margin: 0 auto 25px;
 
   @media (min-width: @tablet-width) {
-    width: 458px;
-    margin-bottom: 65px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 458px;
+    width: 430px;
     margin-bottom: 65px;
   }
 }
@@ -38,10 +37,11 @@
   .title-font();
   color: #000000;
   text-align: center;
-  margin: 0 0 32px;
+  margin: 0 0 26px;
 
   @media (min-width: @tablet-width) {
     .big-special();
+    margin: 0 0 32px;
   }
 
   @media (min-width: @desktop-width) {
@@ -53,7 +53,12 @@
   .basic-font();
   color: #333333;
   text-align: center;
-  padding: 0 15px 18px;
+  padding: 0 0 12px;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 0 18px;
+  }
 }
 
 .catalog__list {
@@ -120,8 +125,6 @@
     padding: 0;
     width: 100%;
     background-color: #f2f2f2;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: @desktop-width) {
@@ -148,6 +151,7 @@
 .catalog__image {
   display: block;
   margin-bottom: 15px;
+  object-fit: cover;
 
   @media (min-width: @tablet-width) {
     margin: 0 0 22px;
@@ -155,6 +159,26 @@
 
   @media (min-width: @desktop-width) {
     margin: 0;
+  }
+}
+
+.catalog__item-legend {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+
   }
 }
 
@@ -169,7 +193,6 @@
 
   @media (min-width: @tablet-width) {
     margin: 0 0 10px;
-    padding-left: 20px;
   }
 
   @media (min-width: @desktop-width) {
@@ -183,7 +206,6 @@
 
   @media (min-width: @tablet-width) {
     margin: 0 0 15px;
-    padding-left: 20px;
   }
 }
 
@@ -207,9 +229,11 @@
   background-color: transparent;
   border: none;
   position: relative;
+  margin: 0;
+
 
   @media (min-width: @tablet-width) {
-    margin: -28px 20px 27px auto;
+    // margin: -28px 20px 27px auto;
     padding: 6px 0 0 32px;
   }
 
