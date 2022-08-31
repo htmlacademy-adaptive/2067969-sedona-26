@@ -5,12 +5,12 @@
 
   @media (min-width: @tablet-width) {
     width: 648px;
-    padding: 0 60px 64px;
+    padding: 0 60px 47px;
   }
 
   @media (min-width: @desktop-width) {
     width: 960px;
-    padding: 0 120px 64px;
+    padding: 0 120px 47px;
   }
 }
 
@@ -26,8 +26,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 434px;
-    padding: 115px 0 67px;
+    width: 435px;
+    padding: 115px 0 66px;
   }
 }
 
@@ -36,6 +36,16 @@
   color: #000000;
   text-align: center;
   margin: 0 0 24px;
+
+  @media (min-width: @tablet-width) {
+    .big-special();
+    margin: 0 0 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    .big-special();
+    margin: 0 0 27px;
+  }
 }
 
 .form__text {
@@ -43,6 +53,10 @@
   color: #333333;
   text-align: center;
   margin: 0;
+
+  @media (min-width: @tablet-width), (min-width: @desktop-width) {
+    .basic-tall();
+  }
 }
 
 .form-review {
@@ -59,22 +73,62 @@
 }
 
 .form-review__button-wrapper {
+  padding-bottom: 24px;
+  width: 280px;
+
   @media (min-width: @tablet-width) {
     grid-area: button;
     width: 648px;
     margin: 0;
+    display: flex;
+    justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
     grid-area: button;
-    width: 960px;
+    width: 768px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+}
+
+.form-review__button {
+  width: 100%;
+  padding: 18px 34px 13px 32px;
+  text-decoration: none;
+  margin-bottom: 3px;
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 384px;
     margin: 0;
+  }
+}
+
+.form-review__legend {
+  width: 137px;
+  display: block;
+  margin: 0 0 0 auto;
+
+  @media (min-width: @tablet-width) {
+    .basic-font();
+    padding: 23px 0 14px;
+  }
+
+  // как изменить шрифт для small
+  @media (min-width: @desktop-width) {
+    .basic-font();
+    padding: 23px 0 14px;
   }
 }
 
 .form-review__group {
   border: none;
   margin: 0;
-  padding: 0 0 39px;
+  padding: 0;
   text-align: left;
 }

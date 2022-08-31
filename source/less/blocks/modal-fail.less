@@ -1,13 +1,17 @@
 .modal-fail__content {
+  width: 100%;
   background-color: #ffffff;
 }
 
 .modal-fail__wrapper {
   width: 237px;
   margin: 0 auto;
+  padding: 45px 0 28px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    width: 307px;
+    width: 400px;
+    padding: 50px 50px 25px 50px;
     margin: 0 auto;
   }
 }
@@ -17,6 +21,16 @@
   color: #000000;
   text-align: center;
   margin: 0;
+  padding-bottom: 31px;
+
+  @media (min-width: @tablet-width) {
+    font-family: inherit;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0 45px 40px;
+  }
 }
 
 .modal-fail__description {
@@ -29,9 +43,17 @@
 .modal-fail__button-wrapper {
   width: 180px;
   margin: 0 auto;
+  padding-bottom: 35px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    width: 252px;
+    width: 400px;
+    padding: 0 64px 49px;
     margin: 0 auto;
   }
+}
+
+.modal-fail__button {
+  width: 100%;
+  padding: 18px 0 14px;
 }

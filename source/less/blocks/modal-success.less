@@ -5,6 +5,13 @@
 .modal-success__wrapper {
   width: 244px;
   margin: 0 auto;
+  padding: 36px 0 27px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 640px;
+    padding: 53px 99px 30px 97px;
+  }
 }
 
 .modal-success__title {
@@ -12,6 +19,16 @@
   color: #000000;
   text-align: center;
   margin: 0;
+  padding-bottom: 33px;
+
+  @media (min-width: @tablet-width) {
+    font-family: inherit;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+  }
 }
 
 .modal-success__description {
@@ -26,4 +43,16 @@
   padding: 20px 20px;
   margin: 0 auto;
   background-color: #f2f2f2f2;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 640px;
+    padding: 44px 91px;
+  }
+}
+
+.modal-success__button {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 18px 20px 14px;
 }
