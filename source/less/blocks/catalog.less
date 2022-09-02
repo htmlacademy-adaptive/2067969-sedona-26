@@ -131,7 +131,8 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
+    // background-color: rgba(0, 0, 0, 1);
     background-color: lighten(#000000, 30%);
   }
 }
@@ -145,6 +146,17 @@
 
   @media (min-width: @desktop-width) {
     color: #ffffff;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 80px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background-color: #000000;
+      opacity: 0.3;
+    }
   }
 }
 
@@ -154,11 +166,15 @@
   object-fit: cover;
 
   @media (min-width: @tablet-width) {
-    margin: 0 0 22px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 0 -80px;
   }
 }
 
@@ -174,7 +190,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 22px 20px 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    z-index: 1;
+    // transform: translateY(-80px);
   }
 }
 
@@ -188,7 +209,7 @@
   color: #000000;
 
   @media (min-width: @tablet-width) {
-    margin: 0 0 10px;
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -201,7 +222,7 @@
   text-align: left;
 
   @media (min-width: @tablet-width) {
-    margin: 0 0 15px;
+    margin: 0;
   }
 }
 
@@ -246,4 +267,8 @@
   left: 0;
   bottom: 4px;
   background-image: url("../img/like-icon.svg");
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/like-icon-white.svg");
+  }
 }

@@ -61,8 +61,12 @@
             <li class="catalog__item">
               <div class="catalog__item-wrapper">
                 <a class="catalog__link" href="#">
-                  <img class="catalog__image" src="img/photo-1-mobile.jpg" width="280" height="280"
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                    <img class="catalog__image" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="280" height="280"
                     alt="Пустое шоссе в пустыне, закат.">
+                  </picture>
                 </a>
                 <div class="catalog__item-legend">
                   <div class="catalog__item-info">
@@ -80,8 +84,12 @@
             <li class="catalog__item">
               <div class="catalog__item-wrapper">
                 <a class="catalog__link" href="#">
-                  <img class="catalog__image" src="img/photo-2-mobile.jpg" width="280" height="280"
-                    alt="Цветущие кактусы на фоте скалы.">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                    <img class="catalog__image" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" width="280" height="280"
+                      alt="Цветущие кактусы на фоте скалы.">
+                  </picture>
                 </a>
                 <div class="catalog__item-legend">
                   <div class="catalog__item-info">
@@ -99,8 +107,12 @@
             <li class="catalog__item">
               <div class="catalog__item-wrapper">
                 <a class="catalog__link" href="#">
-                  <img class="catalog__image" src="img/photo-3-mobile.jpg" width="280" height="280"
-                    alt="Дорога-серпантин через лес и скалы.">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                    <img class="catalog__image" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="280" height="280"
+                      alt="Дорога-серпантин через лес и скалы.">
+                  </picture>
                 </a>
                 <div class="catalog__item-legend">
                   <div class="catalog__item-info">
@@ -118,8 +130,12 @@
             <li class="catalog__item">
               <div class="catalog__item-wrapper">
                 <a class="catalog__link" href="#">
-                  <img class="catalog__image" src="img/photo-4-mobile.jpg" width="280" height="280"
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                    <img class="catalog__image" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" width="280" height="280"
                     alt="Скалы в виде моста над пропастью.">
+                  </picture>
                 </a>
                 <div class="catalog__item-legend">
                   <div class="catalog__item-info">
@@ -144,11 +160,12 @@
             &nbsp;очередной раз!</p>
         </div>
         <div class="catalog-video__item-wrapper">
-          <img class="catalog-video__item" src="img/video-mobile.jpg" width="280" height="177">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img class="catalog-video__item" src="img/video-mobile.jpg" width="280" height="177" srcset="img/video-mobile@2x.jpg 2x">
+          </picture>
           <button class="catalog-video__control" type="button"></button>
-          <!-- <video class="catalog-video__item" width="280" height="177" controls="controls" poster="img/poster.jpg">
-            <source src="#">
-          </video> -->
         </div>
       </section>
     </main>

@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link href="css/style.css" rel="stylesheet" >
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="imп/favicon/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="imп/favicon/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+
 </head>
 
 <body class="page__body">
@@ -66,8 +71,12 @@
                 <p class="advantages__description">Седона не аттракцион для туристов, там&nbsp;течёт своя жизнь</p>
               </div>
               <div class="photo-item__image-wrapper">
-                <img class="photo-item__image" src="img/photo-city.jpg" width="320" height="260"
-                  alt="Американский городок, мотель с флагами и видом на горы.">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+                  <img class="photo-item__image" src="img/photo-city.jpg" srcset="img/photo-city@2x.jpg 2x" width="320" height="260"
+                    alt="Американский городок, мотель с флагами и видом на горы.">
+                </picture>
               </div>
               <ul class="advantages__town-list">
                 <li class="advantages__town-item">
@@ -97,7 +106,11 @@
                 <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
               <div class="photo-item__image-wrapper photo-item__image-wrapper--bridge">
-                <img class="photo-item__image" src="img/photo-bridge.jpg" width="320" height="260" alt="Скалы в виде моста над пропастью.">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                  <img class="photo-item__image" src="img/photo-bridge.jpg" srcset="img/photo-bridge@2x 2x" width="320" height="260" alt="Скалы в виде моста над пропастью.">
+                </picture>
               </div>
             </li>
             <li class="advantages__item no-photo-item no-photo-item--area">
