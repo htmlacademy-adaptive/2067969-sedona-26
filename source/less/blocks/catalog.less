@@ -46,6 +46,7 @@
 
   @media (min-width: @desktop-width) {
     .big-special();
+    margin: 0 0 30px;
   }
 }
 
@@ -58,6 +59,10 @@
 
   @media (min-width: @tablet-width) {
     padding: 0 0 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 0 24px;
   }
 }
 
@@ -131,7 +136,8 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
+    // background-color: rgba(0, 0, 0, 1);
     background-color: lighten(#000000, 30%);
   }
 }
@@ -154,11 +160,15 @@
   object-fit: cover;
 
   @media (min-width: @tablet-width) {
-    margin: 0 0 22px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 0 -80px;
   }
 }
 
@@ -174,7 +184,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 20px 20px 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -188,7 +203,7 @@
   color: #000000;
 
   @media (min-width: @tablet-width) {
-    margin: 0 0 10px;
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -201,7 +216,7 @@
   text-align: left;
 
   @media (min-width: @tablet-width) {
-    margin: 0 0 15px;
+    margin: 0;
   }
 }
 
@@ -229,7 +244,6 @@
 
 
   @media (min-width: @tablet-width) {
-    // margin: -28px 20px 27px auto;
     padding: 6px 0 0 32px;
   }
 
@@ -246,4 +260,8 @@
   left: 0;
   bottom: 4px;
   background-image: url("../img/like-icon.svg");
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/like-icon-white.svg");
+  }
 }

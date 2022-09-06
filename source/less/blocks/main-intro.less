@@ -4,6 +4,23 @@
   background-repeat: no-repeat;
   background-size: 100% auto;
   position: relative;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-intro-mobile@x2.jpg");
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/back-intro-desktop.jpg");
+    background-size: 100% auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-intro-desktop@x2.jpg");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-size: 100% auto;
+  }
 }
 
 .main-intro::after {
@@ -15,6 +32,11 @@
   left: 0;
   width: 100%;
   height: 57px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/intro-triangle-desktop.svg");
+    background-position: 50% 0;
+  }
 }
 
 .main-intro__image {

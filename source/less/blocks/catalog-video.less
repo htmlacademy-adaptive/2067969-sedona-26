@@ -30,7 +30,7 @@
 
   @media (min-width: @desktop-width) {
     width: 445px;
-    padding: 0 0 64px;
+    padding: 0 0 88px;
     margin: 0 auto;
   }
 }
@@ -74,9 +74,16 @@
 
   @media (min-width: @desktop-width) {
     width: 800px;
-    padding: 62px 0 0;
-    margin: 0 auto;
+    min-height: 500px;
+    padding: 0;
+    margin: 0 auto 90px;
   }
+}
+
+.catalog-video__item {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .catalog-video__control {
@@ -86,8 +93,9 @@
   margin: 0;
   padding: 0;
   border: none;
-  left: 144px;
-  top: 63px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   background-color: transparent;
 }
 
