@@ -6,17 +6,35 @@
 
 .advantages__header-wrapper {
   width: 282px;
-  margin: 0 auto;
-  padding: 32px 0 53px;
+  margin: 0 21px 0 18px;
+  padding: 33px 0;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     width: 520px;
     padding: 47px 0 55px;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
     width: 490px;
     padding: 59px 0 45px;
+  }
+}
+
+.advantages__header-wrapper::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/adv-header.mob.svg");
+  background-repeat: no-repeat;
+  bottom: -21px;
+  left: -18px;
+  width: 320px;
+  height: 37px;
+  z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 
@@ -66,21 +84,38 @@
 
   @media (min-width: @tablet-width) {
     .special-font();
-    margin: 0 25px 11px;
+    margin: 0 26px 11px;
   }
 
   @media (min-width: @desktop-width) {
     .special-font();
-    margin: 0 68px 11px;
+    margin: 0 60px 11px;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .advantages__item-title--tourist {
+    margin: 0 76px 11px;
+  }
+}
+
+.advantages__item-title--bridge {
+  @media (min-width: @tablet-width) {
+    margin: 0 18px 11px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 34px 11px;
+  }
+}
+
 
 .advantages__number {
   .basic-font();
   margin: 0 auto 17px;
 
   @media (min-width: @tablet-width) {
-    margin: 0 auto 27px;
+    margin: 0 auto 25px;
   }
 
   @media (min-width: @desktop-width) {
@@ -94,11 +129,11 @@
 
 .advantages__town-list {
   margin: 0;
-  padding: 23px 0 60px;
+  padding: 23px 18px 52px;
   list-style-type: none;
   background-color: #ffffff;
   display: grid;
-  row-gap: 22px;
+  row-gap: 20px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -113,14 +148,14 @@
 }
 
 .advantages__town-item-wrapper {
-  width: 240px;
-  margin: 0 auto;
+  width: 284px;
+  margin: 0 auto 0 0;
   // padding: 0 18px;
 
 
   @media (min-width: @tablet-width) {
     width: 256px;
-    padding: 50px 31px 59px;
+    padding: 50px 26px 59px;
     box-sizing: border-box;
   }
 
@@ -136,13 +171,12 @@
   color: #000000;
   text-align: left;
   margin: 0;
-  padding: 8px 0 16px 42px;
+  padding: 8px 0 16px 50px;
 
   @media (min-width: @tablet-width) {
     .special-font();
     text-align: center;
     margin-bottom: 24px;
-    padding: 108px 0 0 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -156,11 +190,11 @@
   margin: 0;
   color: #333333;
   text-align: left;
-  padding-left: 42px;
+  padding-left: 49px;
 
   @media (min-width: @tablet-width) {
     text-align: center;
-    padding: 0;
+    padding: 0 13px;
   }
 
   @media (min-width: @desktop-width) {
@@ -169,15 +203,29 @@
   }
 }
 
+.advantages__town-description--souvenirs {
+  padding-left: 45px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 0 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 18px 0;
+  }
+}
+
 .advantages__town-title--housing {
   background-image: url("../img/housing-icon.svg");
   background-repeat: no-repeat;
   background-size: 40px 40px;
-  background-position: left;
+  background-position: left top;
+  padding: 8px 0 16px 48px;
 
   @media (min-width: @tablet-width) {
-    background-position: center top;
-    background-size: 75px 72px;
+    padding: 108px 0 0;
+    background-position: center 9px;
+    background-size: 78px 78px;
   }
 }
 
@@ -185,11 +233,13 @@
   background-image: url("../img/food-icon.svg");
   background-repeat: no-repeat;
   background-size: 40px 40px;
-  background-position: left;
+  background-position: left top;
+  padding: 10px 0 16px 51px;
 
   @media (min-width: @tablet-width) {
-    background-position: center top;
-    background-size: 77px 68px;
+    padding: 108px 0 0;
+    background-position: center 9px;
+    background-size: 86px 77px;
   }
 }
 
@@ -197,10 +247,12 @@
   background-image: url("../img/souvenir-icon.svg");
   background-repeat: no-repeat;
   background-size: 40px 40px;
-  background-position: left;
+  background-position: left top;
+  padding: 12px 0 14px 44px;
 
   @media (min-width: @tablet-width) {
+    padding: 108px 0 0;
     background-position: center top;
-    background-size: 64px 75px;
+    background-size: 79px 102px;
   }
 }
