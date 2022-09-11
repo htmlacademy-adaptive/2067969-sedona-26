@@ -77,15 +77,21 @@
   .basic-font();
   color: #333333;
   text-align: center;
-  margin: 0 0 33px;
+  margin: 0 auto 33px;
 
   // не получается выровнять текст
   @media (min-width: @tablet-width) {
-    margin: 0 0 42px;
+    margin: 0 auto 42px;
     padding: 0 10px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 0 45px;
+    margin: 0 auto 45px;
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .search-hotel__description br {
+    display: none;
   }
 }
