@@ -10,16 +10,21 @@
   }
 
   @media (min-width: @tablet-width) {
-    background-image: url("../img/back-intro-desktop.jpg");
+    background-image: url("../img/back-intro-tablet.jpg");
     background-size: 100% auto;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/back-intro-desktop@x2.jpg");
+      background-image: url("../img/back-intro-tablet@x2.jpg");
     }
   }
 
   @media (min-width: @desktop-width) {
+    background-image: url("../img/back-intro-desktop.jpg");
     background-size: 100% auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-intro-desktop@2x.jpg");
+    }
   }
 }
 

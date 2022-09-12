@@ -63,8 +63,10 @@
   @media (min-width: @tablet-width) {
     width: 90%;
     padding: 0 0 48px;
+    margin: 0 34px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
@@ -82,7 +84,7 @@
   color: #000000;
   text-align: center;
   margin: 0 auto;
-  padding: 24px 0 4px;
+  padding: 26px 0 4px;
 
   @media (min-width: @tablet-width) {
     .special-font();
@@ -93,7 +95,7 @@
 
   @media (min-width: @desktop-width) {
     .special-font();
-    padding: 10px 280px 34px;
+    padding: 10px 280px 30px;
   }
 }
 
@@ -101,7 +103,7 @@
   .title-font();
   text-transform: none;
   color: #000000;
-  text-align: left;
+  text-align: center;
   padding: 10px 0 10px 62px;
   position: relative;
 
@@ -112,6 +114,7 @@
 
   @media (min-width: @desktop-width) {
     margin: 0;
+    padding: 10px 5px 10px 68px;
   }
 
   &:hover .impression__mark {
