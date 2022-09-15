@@ -1,13 +1,14 @@
-import gulp, { src } from 'gulp';
+import gulp from 'gulp';
 import plumber from 'gulp-plumber';
 import less from 'gulp-less';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
+import del from 'del';
 import csso from 'postcss-csso';
 import htmlmin from 'gulp-htmlmin';
 import rename from 'gulp-rename'; // 'rename' is declared but its value is never read.ts(6133) почему не прочитает?
-import script from 'terser';
+import terser from 'gulp-terser';
 import sqoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore'; //Could not find a declaration file for module 'gulp-svgstore'.
@@ -56,19 +57,20 @@ const copyImages = () => {
 }
 
 // WebP
-const createWebp = () => {}
+const createWebp = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(sqoosh())
   .pipe(gulp.dest('build/img'))
-
+}
 // SVG
 
-const svg = () => {}
+const svg = () => {
   return gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
   .pipe(svgo())
   .pipe(gulp.dest('build/img'));
+}
 
-const sprite = () => {}
+const sprite = () => {
   return gulp.src('source/img/icons/*.svg')
   .pipe(svgo())
   .pipe(svgstore({
@@ -76,6 +78,7 @@ const sprite = () => {}
   }))
   .pipe(rename('sprite.svg'))
   .pipe(gulp.dest('build/img'));
+}
 
 //Copy
 
@@ -83,7 +86,8 @@ const copy = (done) => {
   gulp.src([
    'source/fonts/*.{woff,woff2}',
    'source/*.ico',
-   'source/img/favicon/*.{png,svg}'
+   'source/img/favicon/*.{png,svg}',
+   'source/manifest.webmanifest'
   ], {
     base: 'source'
   })
@@ -94,7 +98,7 @@ done();
 // Clean
 
 const clean = () => {
-  return delete('build');
+  return gulp.del('build');
 }
 
 // Server
@@ -102,7 +106,7 @@ const clean = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -129,7 +133,7 @@ const watcher = () => {
 
 //Build
 
-const build = gulp.series(
+export const build = gulp.series(
   clean,
   copy,
   optimizeImages,
