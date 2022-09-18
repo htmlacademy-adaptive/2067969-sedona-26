@@ -110,19 +110,31 @@
 }
 
 .form-review__legend {
-  width: 137px;
   display: block;
-  margin: 0 0 0 auto;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
-    .basic-font();
     padding: 23px 0 14px;
   }
 
-  // как изменить шрифт для small
+
   @media (min-width: @desktop-width) {
-    .basic-font();
     padding: 23px 0 14px;
+  }
+}
+
+.form-review__legend small {
+  width: 50%;
+  display: block;
+  margin: 0 0 0 auto;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 21px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    font-size: 14px;
   }
 }
 

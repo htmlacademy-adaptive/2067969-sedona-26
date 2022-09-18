@@ -7,11 +7,11 @@ import browser from 'browser-sync';
 import del from 'del';
 import csso from 'postcss-csso';
 import htmlmin from 'gulp-htmlmin';
-import rename from 'gulp-rename'; // 'rename' is declared but its value is never read.ts(6133) почему не прочитает?
+import rename from 'gulp-rename';
 import terser from 'gulp-terser';
 import sqoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
-import svgstore from 'gulp-svgstore'; //Could not find a declaration file for module 'gulp-svgstore'.
+import svgstore from 'gulp-svgstore';
 
 // Styles
 
