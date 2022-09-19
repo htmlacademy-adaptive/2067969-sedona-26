@@ -29,6 +29,7 @@ export const styles = () => {
 }
 
 // HTML
+
 const html = () => {
   return gulp.src('source/*.html')
   .pipe(htmlmin({ collapseWhitespace: true }))
@@ -36,6 +37,7 @@ const html = () => {
 }
 
 //Script
+
 const script = () => {
   return gulp.src('source/js/*.js')
   .pipe(terser())
@@ -43,6 +45,7 @@ const script = () => {
 }
 
 // Images
+
 const optimizeImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(sqoosh())
@@ -55,6 +58,7 @@ const copyImages = () => {
 }
 
 // WebP
+
 const createWebp = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(sqoosh({
@@ -62,6 +66,7 @@ const createWebp = () => {
   }))
   .pipe(gulp.dest('build/img'))
 }
+
 // SVG
 
 const svg = () => {
@@ -126,7 +131,6 @@ const reload = (done) => {
 
 const watcher = () => {
   gulp.watch('source/less/**/*.less', gulp.series(styles));
-  // gulp.watch('source/*.html').on('change', browser.reload);  // Это удалять нужно?
   gulp.watch('source/js/script.js', gulp.series(script));
   gulp.watch('source/*.html', gulp.series(html, reload));
 }
@@ -150,7 +154,6 @@ export const build = gulp.series(
 // default
 
 export default gulp.series(
-  // styles, server, watcher // Это удалять?
   clean,
   copy,
   copyImages,
