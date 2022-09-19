@@ -65,8 +65,8 @@
           </header>
           <form class="form-review" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="form-review__group username">
+              <legend class="username__title">Представьтесь:</legend>
               <div class="username__wrapper">
-                <legend class="username__title">Представьтесь:</legend>
                 <label class="username__label" for="name">
                   <span class="username__text">ИМЯ*:</span>
                   <input class="username__field" type="text" name="name" id="name" value="Пётр" required>
@@ -82,24 +82,24 @@
               </div>
             </fieldset>
             <fieldset class="form-review__group contacts">
+              <legend class="contacts__title">Контактная информация:</legend>
               <div class="contacts__wrapper">
-                <legend class="contacts__title">Контактная информация:</legend>
                 <label class="contacts__label">
                   <span class="contacts__text">Контактный телефон*:</span>
                   <input class="contacts__field" type="tel" name="phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{7}"
                     placeholder="Введите телефон" required>
-                  <span class="contacts__icon--phone"></span>
+                  <span class="contacts__icon contacts__icon--phone"></span>
                 </label>
                 <label class="contacts__label">
                   <span class="contacts__text">Электронная почта*:</span>
                   <input class="contacts__field" type="email" name="e-mail" placeholder="Введите e-mail" required>
-                  <span class="contacts__icon--email"></span>
+                  <span class="contacts__icon contacts__icon--email"></span>
                 </label>
               </div>
             </fieldset>
             <fieldset class="form-review__group impression">
+              <legend class="impression__title">Ваше общее впечатление:</legend>
               <div class="impression__wrapper">
-                <legend class="impression__title">Ваше общее впечатление:</legend>
                 <label class="impression__label">Скорее положительное
                   <input class="impression__control" type="radio" name="impression" value="positive" checked>
                   <span class="impression__mark"></span>
@@ -115,8 +115,8 @@
               </div>
             </fieldset>
             <fieldset class="form-review__group attractions">
+              <legend class="attractions__title">Посещенные достопримечательности:</legend>
               <div class="attractions__wrapper">
-                <legend class="attractions__title">Посещенные достопримечательности:</legend>
                 <label class="attractions__label">Мост Дьявола
                   <input class="attractions__control" type="checkbox" name="d-bridge" value="d-bridge" checked>
                   <span class="attractions__mark"></span>
@@ -136,8 +136,8 @@
               </div>
             </fieldset>
             <fieldset class="form-review__group review">
+              <legend class="review__title">Опишите свои эмоции:</legend>
               <div class="review__wrapper">
-                <legend class="review__title">Опишите свои эмоции:</legend>
                 <label class="review__label">
                   <textarea class="review__field" name="review__field"
                     placeholder="Опишите подробно все свои восторги"></textarea>

@@ -7,7 +7,7 @@
   }
 }
 
-.username::before {
+.username__title::before {
   content: "";
   position: absolute;
   width: 320px;
@@ -31,7 +31,7 @@
   @media (min-width: @tablet-width) {
     width: 280px;
     margin: 0 auto 0 0;
-    padding: 0 0 63px;
+    padding: 16px 0 63px;
   }
 
   @media (min-width: @desktop-width) {
@@ -43,16 +43,16 @@
   .title-font();
   color: #000000;
   text-align: center;
-  padding: 24px 0 4px;
+  padding: 24px 0 20px;
 
   @media (min-width: @tablet-width) {
     .special-font();
-    padding: 0 0 12px 40px;
+    padding: 0 0 12px 0;
   }
 
   @media (min-width: @desktop-width) {
     .special-font();
-    padding: 0 0 12px 61px;
+    padding: 0 0 12px 10px;
   }
 }
 
