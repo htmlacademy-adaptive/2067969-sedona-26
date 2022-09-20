@@ -7,13 +7,13 @@
   }
 }
 
-.username__title::before {
+.username__wrapper::after {
   content: "";
   position: absolute;
   width: 320px;
   height: 1px;
   background-color: #e5e5e5;
-  top: 0;
+  bottom: 0;
   left: -20px;
 
   @media (min-width: @tablet-width) {
@@ -43,7 +43,7 @@
   .title-font();
   color: #000000;
   text-align: center;
-  padding: 24px 0 20px;
+  padding: 25px 0 20px;
 
   @media (min-width: @tablet-width) {
     .special-font();
@@ -81,8 +81,9 @@
     background-color: #e5e5e5;
   }
 
-  &:active {
+  &:focus {
     background-color: transparent;
     box-shadow: inset 0 0 0 4px #e5e5e5;
+    outline: none;
   }
 }

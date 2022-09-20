@@ -28,14 +28,32 @@
   width: 100%;
   margin: 0 auto;
   padding-bottom: 10px;
+  background-image: url("../img/map-mobile.jpg");
+  background-size: 100% auto;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map-mobile@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     width: 768px;
     padding: 0;
+    background-image: url("../img/map-tablet.jpg");
+    background-size: 100% auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-table@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
     width: 1200px;
+    background-image: url("../img/map-desktop.jpg");
+    background-size: 100% auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-desktop@2x.jpg");
+    }
   }
 }
 

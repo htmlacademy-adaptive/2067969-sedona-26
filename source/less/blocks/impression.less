@@ -7,49 +7,43 @@
   }
 }
 
-.impression__title::before {
+.impression__wrapper::after {
   content: "";
   position: absolute;
   width: 320px;
   height: 1px;
   background-color: #e5e5e5;
-  top: 0;
+  bottom: 0;
   left: -20px;
 
   @media (min-width: @tablet-width) {
     width: 123px;
-    top: 12px;
+    top: -40px;
     left: 0;
   }
 
   @media (min-width: @desktop-width) {
     width: 280px;
-    top: 20px;
+    top: -46px;
     left: 0;
   }
 }
 
-@media (min-width: @tablet-width) {
-  .impression__title::after {
+.impression__wrapper::before {
+  @media (min-width: @tablet-width) {
     content: "";
     position: absolute;
     width: 123px;
     height: 1px;
     background-color: #e5e5e5;
-    top: 12px;
+    top: -40px;
     right: 0;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .impression__title::after {
-    content: "";
-    position: absolute;
+  @media (min-width: @desktop-width) {
     width: 280px;
-    height: 1px;
-    background-color: #e5e5e5;
-    top: 20px;
-    right: 0;
+    top: -46px;
+    right: 5px;
   }
 }
 
@@ -94,8 +88,13 @@
 
   @media (min-width: @desktop-width) {
     .special-font();
-    padding: 10px 280px 30px;
+    padding: 8px 284px 30px 276px;
   }
+}
+
+.impression__control:focus + .impression__mark {
+  box-shadow: inset 0 0 0 4px #d5d5d5;
+  outline: none;
 }
 
 .impression__label {
@@ -107,7 +106,7 @@
   position: relative;
 
   @media (min-width: @tablet-width) {
-    padding: 10px 33px 10px 62px;
+    padding: 11px 33px 10px 62px;
     margin-right: 12px;
   }
 
@@ -125,15 +124,7 @@
   }
 }
 
-.impression__control {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
-  margin: 0;
-}
-
-.impression__mark::before {
-  content: "";
+.impression__mark {
   width: 46px;
   height: 46px;
   background-color: #f2f2f2;
@@ -141,6 +132,13 @@
   left: 0;
   top: 0;
   border-radius: 50%;
+}
+
+.impression__control {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 0;
 }
 
 .impression__control[type="radio"]:checked + .impression__mark::before {
@@ -152,5 +150,13 @@
   top: 15px;
   left: 15px;
   border-radius: 50%;
-  box-shadow: 0 0 0 15px #f2f2f2;
+}
+
+.impression__control[type="radio"]:checked:focus + .impression__mark {
+  box-shadow: inset 0 0 0 4px #d5d5d5;
+  outline: none;
+}
+
+.impression__label:active .impression__mark::before {
+  opacity: 30%;
 }
