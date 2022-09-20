@@ -92,6 +92,11 @@
   }
 }
 
+.impression__control:focus + .impression__mark {
+  box-shadow: inset 0 0 0 4px #d5d5d5;
+  outline: none;
+}
+
 .impression__label {
   .title-font();
   text-transform: none;
@@ -119,15 +124,7 @@
   }
 }
 
-.impression__control {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
-  margin: 0;
-}
-
-.impression__mark::before {
-  content: "";
+.impression__mark {
   width: 46px;
   height: 46px;
   background-color: #f2f2f2;
@@ -135,6 +132,13 @@
   left: 0;
   top: 0;
   border-radius: 50%;
+}
+
+.impression__control {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 0;
 }
 
 .impression__control[type="radio"]:checked + .impression__mark::before {
@@ -146,5 +150,13 @@
   top: 15px;
   left: 15px;
   border-radius: 50%;
-  box-shadow: 0 0 0 15px #f2f2f2;
+}
+
+.impression__control[type="radio"]:checked:focus + .impression__mark {
+  box-shadow: inset 0 0 0 4px #d5d5d5;
+  outline: none;
+}
+
+.impression__label:active .impression__mark::before {
+  opacity: 30%;
 }
