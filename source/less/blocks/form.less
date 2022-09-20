@@ -19,6 +19,8 @@
   margin: 0 auto;
   padding-top: 36px;
   padding-bottom: 28px;
+  display: block;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     width: 435px;
@@ -28,6 +30,20 @@
   @media (min-width: @desktop-width) {
     width: 435px;
     padding: 115px 0 66px;
+  }
+}
+
+.form__header-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  background-color: #e5e5e5;
+  bottom: 0;
+  left: -20px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 
@@ -44,7 +60,7 @@
 
   @media (min-width: @desktop-width) {
     .big-special();
-    margin: 0 0 27px;
+    margin: 0 0 30px;
   }
 }
 

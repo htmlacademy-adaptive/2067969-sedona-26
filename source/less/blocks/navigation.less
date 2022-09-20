@@ -151,7 +151,7 @@
     grid-template-columns: repeat(5, 1fr);
   }
 
-  @media screen and (min-width: @desktop-width) {
+  @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
@@ -194,6 +194,26 @@
 }
 
 .navigation__item:nth-child(4) {
+  @media (min-width: @tablet-width) {
+    grid-column: 5 / 6;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 5 / 6;
+  }
+}
+
+.navigation__item:nth-child(7) {
+  @media (min-width: @tablet-width) {
+    grid-column: 4 / 5;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 4 / 5;
+  }
+}
+
+.navigation__item:nth-child(8) {
   @media (min-width: @tablet-width) {
     grid-column: 5 / 6;
   }

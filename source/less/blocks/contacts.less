@@ -7,27 +7,27 @@
   }
 }
 
-.contacts__title::before {
+.contacts__wrapper::after {
   content: "";
   position: absolute;
   width: 320px;
   height: 1px;
   background-color: #e5e5e5;
-  top: 0;
+  bottom: 0;
   left: -20px;
 
   @media (min-width: @tablet-width) {
     width: 1px;
     height: 338px;
-    top: 0;
+    top: -35px;
     left: 0;
   }
 
   @media (min-width: @desktop-width) {
     width: 1px;
     height: 338px;
-    top: 0;
-    left: 14px;
+    top: -40px;
+    left: 10px;
   }
 }
 
@@ -60,7 +60,7 @@
   @media (min-width: @tablet-width) {
     .special-font();
     width: 100%;
-    padding: 0 16px 12px 0;
+    padding: 0 16px 12px 3px;
     text-align: center;
   }
 
@@ -122,9 +122,10 @@
     background-color: #e5e5e5;
   }
 
-  &:active {
+  &:focus {
     background-color: transparent;
     box-shadow: inset 0 0 0 4px #e5e5e5;
+    outline: none;
   }
 }
 
