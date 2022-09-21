@@ -6,9 +6,17 @@
 
 .navigation__toggle-wrapper {
   width: 23px;
-  height: 50px;
+  min-height: 50px;
   margin-left: auto;
   padding-right: 2px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 0;
+  }
 }
 
 .navigation__toggle {
@@ -115,13 +123,14 @@
   width: 100%;
 
   @media (min-width: @tablet-width) {
+    position: relative;
     width: 100%;
-    z-index: 0;
+    z-index: 1;
   }
 
   @media (min-width: @desktop-width) {
     width: 100%;
-    z-index: 0;
+    z-index: 1;
   }
 }
 
@@ -149,6 +158,7 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
   }
 
   @media (min-width: @desktop-width) {
